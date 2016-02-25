@@ -70,4 +70,16 @@ class ViewController: UIViewController {
         }
     }
     
+    // The comment below is quoted from Apple's documentation. The handoffs between source and destination view controllers are tangled but brilliant. You have to read the documentation a few times to get it.
+    
+    // When you create the unwind segue in your storyboard, you specify the name of an unwind action in the view controller you want the segue to unwind to. This unwind action is invoked just before the unwind segue is performed. You can access the sourceViewController of the UIStoryboardSegue parameter to retrieve any data from the view controller that initiated the unwind segue.
+    @IBAction func unwindAcknowledgements(sender: UIStoryboardSegue) {
+        // Your app will crash at the downcase in the next line if you have not correctly set the type of the view controller in the acknowledgments scene.
+        let gaelsViewController = sender.sourceViewController as! GaelsViewController
+        // Now we show we actually can retrieve some data from the view controller that initiated the unwind segue.
+        let motto = gaelsViewController.motto
+        print("Success! Got motto \"\(motto)\" from the acknowledgments scene")
+    }
+    
+    
 }

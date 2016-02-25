@@ -12,7 +12,6 @@
 		D30F6B4D1C799E720037B77B /* DisplayDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B481C799E720037B77B /* DisplayDecoder.swift */; };
 		D30F6B4E1C799E720037B77B /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B491C799E720037B77B /* InputHandler.swift */; };
 		D30F6B4F1C799E720037B77B /* KeyboardInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B4A1C799E720037B77B /* KeyboardInput.swift */; };
-		D30F6B521C799E950037B77B /* CPUStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B501C799E950037B77B /* CPUStateTests.swift */; };
 		D30F6B531C799E950037B77B /* InputHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B511C799E950037B77B /* InputHandlerTests.swift */; };
 		D398247E1C799FB00056ECEF /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398247D1C799FB00056ECEF /* DisplayView.swift */; };
 		D398247F1C79A03B0056ECEF /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B461C799E720037B77B /* Clock.swift */; };
@@ -20,6 +19,7 @@
 		D39824811C79A03B0056ECEF /* DisplayDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B481C799E720037B77B /* DisplayDecoder.swift */; };
 		D39824821C79A03B0056ECEF /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B491C799E720037B77B /* InputHandler.swift */; };
 		D39824831C79A03B0056ECEF /* KeyboardInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30F6B4A1C799E720037B77B /* KeyboardInput.swift */; };
+		D39D6E611C7EF86E000FE1A5 /* GaelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39D6E601C7EF86E000FE1A5 /* GaelsViewController.swift */; };
 		D3B430A31C799C3F00B1A576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B430A21C799C3F00B1A576 /* AppDelegate.swift */; };
 		D3B430A51C799C3F00B1A576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B430A41C799C3F00B1A576 /* ViewController.swift */; };
 		D3B430A81C799C3F00B1A576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B430A61C799C3F00B1A576 /* Main.storyboard */; };
@@ -43,9 +43,10 @@
 		D30F6B481C799E720037B77B /* DisplayDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayDecoder.swift; path = Model/DisplayDecoder.swift; sourceTree = "<group>"; };
 		D30F6B491C799E720037B77B /* InputHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputHandler.swift; path = Model/InputHandler.swift; sourceTree = "<group>"; };
 		D30F6B4A1C799E720037B77B /* KeyboardInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardInput.swift; path = Model/KeyboardInput.swift; sourceTree = "<group>"; };
-		D30F6B501C799E950037B77B /* CPUStateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUStateTests.swift; sourceTree = "<group>"; };
 		D30F6B511C799E950037B77B /* InputHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputHandlerTests.swift; sourceTree = "<group>"; };
 		D398247D1C799FB00056ECEF /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		D39D6E5E1C7EF72B000FE1A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D39D6E601C7EF86E000FE1A5 /* GaelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaelsViewController.swift; sourceTree = "<group>"; };
 		D3B4309F1C799C3F00B1A576 /* Simulated35.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simulated35.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B430A21C799C3F00B1A576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B430A41C799C3F00B1A576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		D3B430961C799C3F00B1A576 = {
 			isa = PBXGroup;
 			children = (
+				D39D6E5E1C7EF72B000FE1A5 /* README.md */,
 				D3B430A11C799C3F00B1A576 /* Simulated35 */,
 				D3B430B61C799C3F00B1A576 /* Simulated35Tests */,
 				D3B430A01C799C3F00B1A576 /* Products */,
@@ -112,6 +114,7 @@
 				D3B430A21C799C3F00B1A576 /* AppDelegate.swift */,
 				D3B430A41C799C3F00B1A576 /* ViewController.swift */,
 				D398247D1C799FB00056ECEF /* DisplayView.swift */,
+				D39D6E601C7EF86E000FE1A5 /* GaelsViewController.swift */,
 				D3B430A61C799C3F00B1A576 /* Main.storyboard */,
 				D3B430A91C799C3F00B1A576 /* Assets.xcassets */,
 				D3B430AB1C799C3F00B1A576 /* LaunchScreen.storyboard */,
@@ -123,7 +126,6 @@
 		D3B430B61C799C3F00B1A576 /* Simulated35Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D30F6B501C799E950037B77B /* CPUStateTests.swift */,
 				D30F6B511C799E950037B77B /* InputHandlerTests.swift */,
 				D3B430B91C799C3F00B1A576 /* Info.plist */,
 			);
@@ -236,6 +238,7 @@
 				D30F6B4E1C799E720037B77B /* InputHandler.swift in Sources */,
 				D30F6B4D1C799E720037B77B /* DisplayDecoder.swift in Sources */,
 				D3B430A51C799C3F00B1A576 /* ViewController.swift in Sources */,
+				D39D6E611C7EF86E000FE1A5 /* GaelsViewController.swift in Sources */,
 				D398247E1C799FB00056ECEF /* DisplayView.swift in Sources */,
 				D30F6B4C1C799E720037B77B /* CPUState.swift in Sources */,
 				D3B430A31C799C3F00B1A576 /* AppDelegate.swift in Sources */,
@@ -250,7 +253,6 @@
 				D398247F1C79A03B0056ECEF /* Clock.swift in Sources */,
 				D39824821C79A03B0056ECEF /* InputHandler.swift in Sources */,
 				D39824811C79A03B0056ECEF /* DisplayDecoder.swift in Sources */,
-				D30F6B521C799E950037B77B /* CPUStateTests.swift in Sources */,
 				D39824801C79A03B0056ECEF /* CPUState.swift in Sources */,
 				D30F6B531C799E950037B77B /* InputHandlerTests.swift in Sources */,
 			);
